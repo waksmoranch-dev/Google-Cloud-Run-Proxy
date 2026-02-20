@@ -44,7 +44,7 @@ The application is configured using environment variables:
 2.  **Set environment variables:**
     ```bash
     export PORT=8080
-    export V2RAY_SERVER_IP=1.2.3.4  # Replace with your target IP
+    export V2RAY_SERVER_IP=47.80.77.210  # Replace with your target IP
     ```
 
 3.  **Run the application:**
@@ -59,7 +59,7 @@ You can use the pre-built public image:
 ```bash
 docker run -p 8080:8080 \
   -e PORT=8080 \
-  -e V2RAY_SERVER_IP=1.2.3.4 \
+  -e V2RAY_SERVER_IP=47.80.77.210 \
   docker.io/praveenkarunarathne/google-cloud-run-proxy
 ```
 
@@ -72,7 +72,7 @@ Alternatively, to build from source:
 
 2.  **Run the container:**
     ```bash
-    docker run -p 8080:8080 -e PORT=8080 -e V2RAY_SERVER_IP=1.2.3.4 cloud-run-proxy
+    docker run -p 8080:8080 -e PORT=8080 -e V2RAY_SERVER_IP=47.80.77.210 cloud-run-proxy
     ```
 
 ## ☁️ Deploy to Google Cloud Run
@@ -85,7 +85,7 @@ gcloud run deploy cloud-run-proxy \
   --platform managed \
   --region us-central1 \
   --allow-unauthenticated \
-  --set-env-vars V2RAY_SERVER_IP=1.2.3.4
+  --set-env-vars V2RAY_SERVER_IP=47.80.77.210
 ```
 
 *Replace `1.2.3.4` with your target IP.*
